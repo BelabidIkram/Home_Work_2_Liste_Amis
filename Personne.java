@@ -139,7 +139,7 @@ public class Personne
         G.AddFriend(F);
         G.AddFriend(B);
 
-        //affiche la liste de tous les amis ajourés
+        //affiche la liste de tous les amis ajoutés
         System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
         G.AffichListAmis();
 
@@ -155,11 +155,11 @@ public class Personne
         G.RemoveFiend(B);
         G.RemoveFiend(C);
 
-        //on a affiche toute la liste après suppression
+        //on affiche toute la liste après suppression
         System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
         G.AffichListAmis();
 
-        //on affiche la liste des amis étrangers après suppressionb
+        //on affiche la liste des amis étrangers après suppression
         System.out.println("----------------------------------------------------------");
         System.out.println("\nLa liste des Amis étrangers de " + G.getNom() + " " + G.getPrenom() + " : ");
         G.AmisEtranger();
