@@ -127,41 +127,41 @@ public class Personne
         Personne C = new Personne("Amina","Djatou","Algérienne",19);
         Personne D = new Personne("Barma","Ali","Nigérien",22);
         Personne E = new Personne("Orlin","Makanga","Congolaise",23);
-        Personne F = new Personne("Franc","Dubosc","Française",20);
-        Personne G = new Personne("Amed","Sila","Française",20);
+        Personne F = new Personne("Kim","Kardashian","Française",40);
+        Personne G = new Personne("Celine","Dione","Française",30);
 
        //On a ajoute les amis
-        System.out.println(B.getNom() + " " + B.getPrenom() +  " a  ajouté 6 amis ");
-        B.AjoutAmis(A);
-        B.AjoutAmis(C);
-        B.AjoutAmis(D);
-        B.AjoutAmis(E);
-        B.AjoutAmis(F);
-        B.AjoutAmis(G);
+        System.out.println(G.getNom() + " " + G.getPrenom() +  " a  ajouté 6 amis ");
+        G.AjoutAmis(A);
+        G.AjoutAmis(C);
+        G.AjoutAmis(D);
+        G.AjoutAmis(E);
+        G.AjoutAmis(F);
+        G.AjoutAmis(G);
 
         //affiche la liste de tous les amis ajourés
-        System.out.println("La liste de tous les amis de " + B.getNom() + " " + B.getPrenom() + " : ");
-        B.AffichListAmis();
+        System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
+        G.AffichListAmis();
 
         //affiche la liste des amis étrangers
         System.out.println("----------------------------------------------------------");
-        System.out.println("\nLa liste des Amis étrangers de " + B.getNom() + " " + B.getPrenom() + " : ");
-        B.AmisEtranger();
+        System.out.println("\nLa liste des Amis étrangers de " + G.getNom() + " " + G.getPrenom() + " : ");
+        G.AmisEtranger();
         //
         System.out.println("----------------------------------------------------------");
 
         //on retire deux amis
-        System.out.println(B.getNom() + " " + B.getPrenom() + " a retiré 2 amis ");
-        B.SuppAmis(G);
-        B.SuppAmis(C);
+        System.out.println(G.getNom() + " " + G.getPrenom() + " a retiré 2 amis ");
+        G.SuppAmis(G);
+        G.SuppAmis(C);
 
         //on a affiche toute la liste après suppression
-        System.out.println("La liste de tous les amis de " + B.getNom() + " " + B.getPrenom() + " : ");
-        B.AffichListAmis();
+        System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
+        G.AffichListAmis();
 
         //on affiche la liste des amis étrangers après suppressionb
         System.out.println("----------------------------------------------------------");
-        System.out.println("\nLa liste des Amis étrangers de " + B.getNom() + " " + B.getPrenom() + " : ");
-        B.AmisEtranger();
+        System.out.println("\nLa liste des Amis étrangers de " + G.getNom() + " " + G.getPrenom() + " : ");
+        G.AmisEtranger();
     }
 }
