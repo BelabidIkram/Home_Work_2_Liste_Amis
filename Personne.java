@@ -93,7 +93,7 @@ public class Personne
     {
         this.Amis.remove(amis);
     }
-
+//methode pour afficher la liste de tous les amis
     public void AffichListAmis()
     {
         System.out.println("Ma Liste d'amis : ");
@@ -104,7 +104,7 @@ public class Personne
                     + Amis.get(i).getNationalite() + " agé(e) de " + Amis.get(i).getAge() + " ans");
         }
     }
-
+//methode qui affiche tous mes amis etrangers 
     public void AmisEtranger()
     {
         // les amis qui ne sont pas algériens 
@@ -120,6 +120,7 @@ public class Personne
     }
  // excellent
 
+ 
     public static void main(String[] args) {
 
         Personne A = new Personne("Andelo Mata","Horly","Congolaise",23);
