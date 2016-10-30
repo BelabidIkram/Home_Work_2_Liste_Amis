@@ -137,7 +137,7 @@ public class Personne
         G.AjoutAmis(D);
         G.AjoutAmis(E);
         G.AjoutAmis(F);
-        G.AjoutAmis(G);
+        G.AjoutAmis(B);
 
         //affiche la liste de tous les amis ajourés
         System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
@@ -152,7 +152,7 @@ public class Personne
 
         //on retire deux amis
         System.out.println(G.getNom() + " " + G.getPrenom() + " a retiré 2 amis ");
-        G.SuppAmis(G);
+        G.SuppAmis(B);
         G.SuppAmis(C);
 
         //on a affiche toute la liste après suppression
