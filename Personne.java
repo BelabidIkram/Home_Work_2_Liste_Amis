@@ -84,12 +84,12 @@ public class Personne
     }
 
 
-    public void AjoutAmis(Personne amis)
+    public void AddFriend(Personne amis)
     {
         this.Amis.add(amis);
     }
 
-    public void SuppAmis(Personne amis)
+    public void RemoveFriend(Personne amis)
     {
         this.Amis.remove(amis);
     }
@@ -132,12 +132,12 @@ public class Personne
 
        //On a ajoute les amis
         System.out.println(G.getNom() + " " + G.getPrenom() +  " a  ajouté 6 amis ");
-        G.AjoutAmis(A);
-        G.AjoutAmis(C);
-        G.AjoutAmis(D);
-        G.AjoutAmis(E);
-        G.AjoutAmis(F);
-        G.AjoutAmis(B);
+        G.AddFriend(A);
+        G.AddFriend(C);
+        G.AddFriend(D);
+        G.AddFriend(E);
+        G.AddFriend(F);
+        G.AddFriend(B);
 
         //affiche la liste de tous les amis ajourés
         System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
@@ -152,8 +152,8 @@ public class Personne
 
         //on retire deux amis
         System.out.println(G.getNom() + " " + G.getPrenom() + " a retiré 2 amis ");
-        G.SuppAmis(B);
-        G.SuppAmis(C);
+        G.RemoveFiend(B);
+        G.RemoveFiend(C);
 
         //on a affiche toute la liste après suppression
         System.out.println("La liste de tous les amis de " + G.getNom() + " " + G.getPrenom() + " : ");
